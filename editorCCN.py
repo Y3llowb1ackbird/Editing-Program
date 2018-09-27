@@ -51,7 +51,7 @@ def search_and_replace(text, edits, attribution):
 	text = re.sub(r'(\. )([a-z])', capitalize, text)
 	text = re.sub(r'([A-Z]\.[A-Z]\. )([A-Z])', fix_acronyms, text)
 	text = re.sub(r'(<h*>)([a-z])', fix_headings, text)
-	text = re.sub("%", "percent", text)
+	text = re.sub("%", " percent", text)
 
 	if attribution == 1:
 		text = text + ('\n\n<em>Featured Image from Shutterstock. Charts from <a href="https://www.tradingview.com/ideas/cryptocurrency/" target="blank" rel="nofollow">TradingView</a>.</em>')
