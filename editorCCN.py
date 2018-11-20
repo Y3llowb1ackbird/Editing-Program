@@ -69,7 +69,6 @@ def search_and_replace(text, edits, attribution):
 	text = re.sub(r'(\"\,)', ',"', text)
 	text = re.sub(r'(\”\,)', ',"', text)
 	text = re.sub("–", "--", text)
-	text = re.sub(r'(\s\s)', " ", text)
 
 	if attribution == 0:
 		text = text +('\n\n<em>Featured Image from Shutterstock</em>')
